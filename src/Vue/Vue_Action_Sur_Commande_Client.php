@@ -16,7 +16,7 @@ class Vue_Action_Sur_Commande_Client extends Vue_Composant
     {
         $str= "<H1>Action(s) sur cette commande</H1>
     <form>
-        
+        ".genereChampHiddenCSRF()."
         <input type='hidden' name='case' value='Gerer_CommandeClient' >
         <input type='hidden' name='changementEtatCommande' >
         <input type='hidden' name='idCommande' value='".$this->infoCommande["id"]."' >

@@ -23,7 +23,7 @@ class Vue_Entreprise_Liste  extends Vue_Composant
          <tr>
             <td colspan="5" style="text-align: center">
                 <form style=\'display: contents\'>
-                     
+                     ".genereChampHiddenCSRF()."
                     <input type="hidden" name="case" value="Gerer_entreprisesPartenaires">
  
                         <button type="submit" 
@@ -59,7 +59,7 @@ class Vue_Entreprise_Liste  extends Vue_Composant
                 $str .=  "
                 <td>
                     <form style='display: contents'>
-                        
+                        ".genereChampHiddenCSRF()."
                         <input type='hidden' name='case' value='Gerer_entreprisesPartenaires'>
                             <input type='hidden' value='$iemeEntreprise[idEntreprise]' name='idEntreprise'>
                             
@@ -78,7 +78,7 @@ class Vue_Entreprise_Liste  extends Vue_Composant
                         $str .=  "
                 <td>
                     <form style='display: contents'>
-                        
+                        ".genereChampHiddenCSRF()."
                         <input type='hidden' name='case' value='Gerer_entreprisesPartenaires'>
                             <input type='hidden' value='$iemeEntreprise[idEntreprise]' name='idEntreprise'>
                             
@@ -98,7 +98,7 @@ class Vue_Entreprise_Liste  extends Vue_Composant
                         $str .=  "
                 <td>
                     <form style='display: contents'>
-                        
+                        ".genereChampHiddenCSRF()."
                             <input type='hidden' name='case' value='Gerer_entreprisesPartenaires'>
                             
                             <input type='hidden' value='$iemeEntreprise[idEntreprise]' name='idEntreprise'>

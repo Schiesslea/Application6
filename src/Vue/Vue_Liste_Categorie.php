@@ -16,7 +16,7 @@ class Vue_Liste_Categorie  extends Vue_Composant
     <h1>Liste des Catégories de produit</h1> <br>
     <table style='    display: inline-block;'>
         <form>
-            
+            ".genereChampHiddenCSRF()."
             <td colspan='4'>
             <button class='btnRadius'  type='submit' name='action' 
                             value='nouvelleCategorie'>
@@ -41,7 +41,7 @@ class Vue_Liste_Categorie  extends Vue_Composant
                 <td>$iemeCategorie[libelle]</td>
                 <td>
                     <form style='display: contents'>
-                        
+                        ".genereChampHiddenCSRF()."
                         <input type='hidden' name='case' value='Gerer_catalogue'>
                             
                             <input type='hidden' value='$iemeCategorie[idCategorie]' name='idCategorie'>
@@ -55,7 +55,7 @@ class Vue_Liste_Categorie  extends Vue_Composant
             if ($iemeCategorie["desactiverCategorie"] == 0) {
                 $str .=  "<td>
                 <form style='display: contents'>
-                
+                ".genereChampHiddenCSRF()."
                     <input type='hidden' name='case' value='Gerer_catalogue'>
                         
                             <input type='hidden' value='$iemeCategorie[idCategorie]' name='idCategorie'>
@@ -68,7 +68,7 @@ class Vue_Liste_Categorie  extends Vue_Composant
             } elseif ($iemeCategorie["desactiverCategorie"] == 1) {
                 $str .=  "<td>
                         <form style='display: contents'>
-                            
+                            ".genereChampHiddenCSRF()."
                             <input type='hidden' name='case' value='Gerer_catalogue'>
                             
                             <input type='hidden' value='$iemeCategorie[idCategorie]' name='idCategorie'>

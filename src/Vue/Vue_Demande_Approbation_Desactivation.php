@@ -18,7 +18,7 @@ class Vue_Demande_Approbation_Desactivation  extends Vue_Composant
             <h3> Etes-vous sûr(e) de vouloir désactiver cette catégorie ?
              <br> Si oui, les produits se trouvant à l'intérieur de celle-ci ne seront plus visibles sur le catalogue client.</h3>
             <form style='display: contents; align-content: center'>
-                
+                ".genereChampHiddenCSRF()."
                 <input type='hidden' value='$this->idCategorie' name='idCategorie'>
                 <input type='hidden' name='case' value='Gerer_catalogue'>
                 

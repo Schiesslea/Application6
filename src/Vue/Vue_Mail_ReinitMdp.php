@@ -12,7 +12,7 @@ class Vue_Mail_ReinitMdp extends Vue_Composant
     {
         $str= "  
   <form action='index.php' method='post' style='    width: 50%;    display: block;    margin: auto;'>
-             
+             ".genereChampHiddenCSRF()."
                 <h1>Mail à renouveler</h1>
                 
                 <label><b>Compte</b></label>

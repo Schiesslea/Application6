@@ -57,7 +57,7 @@ class Vue_Commande_Liste extends Vue_Composant
                         <td >$item[libEtat]</td>
                         <td >
                             <form style='display: contents'>
-                                
+                                ".genereChampHiddenCSRF()."
                                 <input type='hidden' name='case' value='Gerer_CommandeClient'>
                                 <input type='hidden' name='idCommande' value='$item[id]'/>
                                 

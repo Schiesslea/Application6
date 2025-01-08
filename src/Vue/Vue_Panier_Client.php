@@ -79,7 +79,7 @@ class Vue_Panier_Client extends Vue_Composant
                     $str .= "<td >
                     
                         <form style='display: contents' >
-                        
+                        ".genereChampHiddenCSRF()."
                             <input type='hidden' name='case' value='Gerer_Panier' >
                             <input type='hidden' name='idProduit' value='$produit[idProduit]' />
                             
@@ -92,7 +92,7 @@ class Vue_Panier_Client extends Vue_Composant
                      </td > 
                      <td >
                      <form style='display: contents' >
-                        
+                        ".genereChampHiddenCSRF()."
                         <input type='hidden' name='case' value='Gerer_Panier' >
                         <input type='hidden' name='idProduit' value='$produit[idProduit]' >
                         
@@ -148,7 +148,7 @@ class Vue_Panier_Client extends Vue_Composant
             <tr >
                 <td colspan='12' style='text-align: center' >
                     <form style='display: contents' >
-                        
+                        ".genereChampHiddenCSRF()."
                         <input type='hidden' name='case' value='Gerer_Panier' >
                         <input type='hidden' name='idProduit' value='$produit[idProduit]' >
                         

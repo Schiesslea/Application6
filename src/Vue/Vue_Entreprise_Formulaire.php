@@ -61,7 +61,7 @@ class Vue_Entreprise_Formulaire extends Vue_Composant
         $str .=  "
 <table style='display: inline-block'> 
     <form>
-        
+        ".genereChampHiddenCSRF()."
         <input type='hidden' name='case' value='Gerer_entreprisesPartenaires'>
         
         <input type='hidden' name='idEntreprise' value='$this->idEntreprise'>

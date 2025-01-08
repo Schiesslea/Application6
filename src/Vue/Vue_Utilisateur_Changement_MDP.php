@@ -19,7 +19,7 @@ class Vue_Utilisateur_Changement_MDP extends Vue_Composant
     {
 
         $str="    <form style='display: contents'>
-        
+        ".genereChampHiddenCSRF()."
 <table style='display: inline-block'> 
 
         <input type='hidden' name='case' value='$this->case'>

@@ -29,7 +29,7 @@ private  string $mail="";
         $str .=  "
 <table style='display: inline-block'> 
     <form method='get'>
-        
+        ".genereChampHiddenCSRF()."
         <input type='hidden' name='case' value='Gerer_Entreprise'>
         <input type='hidden' name='idSalarie' value='$this->idSalarie'>
         <tr>

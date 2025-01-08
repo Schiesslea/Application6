@@ -21,7 +21,7 @@ class Vue_Categories_Liste extends Vue_Composant
                 ";
         if ($this->utilisateur) {
             $str .= "<form style='display: contents'> 
-            
+            ".genereChampHiddenCSRF()."
                 <li>
                     <input type='hidden' name='case' value='Gerer_catalogue'>
                     
@@ -36,7 +36,7 @@ class Vue_Categories_Liste extends Vue_Composant
                 $str .= "
                    <li>
                         <form style='display: contents'> 
-                            
+                            ".genereChampHiddenCSRF()."
                             <input type='hidden' name='case' value='Gerer_catalogue'>
                             <input type='hidden' name='idCategorie' value='$iemeCategorie[idCategorie]'>
                             <button type='submit' value='boutonCategorie' name='action'>
@@ -50,7 +50,7 @@ class Vue_Categories_Liste extends Vue_Composant
         }
         $str .= "
                 <form style='display: contents'> 
-                    
+                    ".genereChampHiddenCSRF()."
                     <li><input type='text' name='recherche' placeholder='Rechercher'> </li>
                         <input type='hidden' name='case' value='Gerer_catalogue'>
                     <li>

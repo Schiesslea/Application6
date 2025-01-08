@@ -13,7 +13,7 @@ class Vue_Afficher_Button_Facture extends Vue_Composant
     function donneTexte(): string
     {
         return "<form style='display: contents' >
-                        
+                        ".genereChampHiddenCSRF()."
                         <input type='hidden' name='case' value='Gerer_CommandeClient' >
                         
                         <input type='hidden' name='idCommande' value='$this->idCommande' >
